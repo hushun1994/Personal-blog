@@ -8,15 +8,13 @@ I am 26 years old now.
 
 # 2. Hobby 
 
-1. listen 
+1. listen music
 
-2. music
+2. sing
 
-3. sing
+3. soccer 
 
-4. soccer 
-
-5. LOL
+4. LOL
 
 # 3. Learning experience 
 
@@ -27,3 +25,16 @@ I am 26 years old now.
 * xxx high school 
 
 * xxx University
+
+
+```javascript
+var hushun = {
+    name: 'hushun',
+    sex: male,
+    age: 26,
+    hometown: hubei,
+    hobby: ['listen music', 'sing', 'soccer', 'LOL'],
+    learning_experience: ['xxx primary school', '* xxx middle school', 'xxx high school', 'xxx University']
+}
+
+```
