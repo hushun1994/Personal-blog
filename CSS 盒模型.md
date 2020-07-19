@@ -19,12 +19,16 @@
 
 * 边框，边框区域的大小取决于border-width的值。
 
+## 盒模型分类
 
-### 1. content-box
+### 1. content-box（内容盒模型）
 
-* 元素的宽度就是元素内部内容区域的宽度
-* 元素宽度width = 
+* 内容盒模型元素的宽度就是元素内部内容区域的宽度
+* 元素宽度width = content的宽度
 
-### 2. border-box
+### 2. border-box （边框盒模型）
+
+* 边框盒模型元素的宽度等于内部内容区域的宽度与内边距的宽度以及边框宽度的总和。
+* 元素宽度width = content的宽度 + 2 x border的宽度 + padding的宽度
 
 
