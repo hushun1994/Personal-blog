@@ -74,7 +74,7 @@ flex布局意为弹性布局，为盒模型提供最大的灵活性。任何一�
 
 Flex布局的属性分成两类。一类定义在容器上面，称为容器属性；另一类定义在项目上面，称为项目属性。这部分先介绍容器属性。
 
-1. flex-direction: 主轴方向（items的流动方向）
+###### 1. flex-direction: 主轴方向（items的流动方向）
 
 ```
   flex-direction: row | row-reverse | column |column-reverse;
@@ -85,7 +85,7 @@ Flex布局的属性分成两类。一类定义在容器上面，称为容器属�
 * column：主轴在垂直方向，从上往下；
 * column-reverse：主轴在垂直方向，从下往上；
 
-2. flex-wrap: 设置换行方式
+###### 2. flex-wrap: 设置换行方式
 
 ```
   flex-wrap: nowrap | wrap | wrap-reverse;
@@ -95,7 +95,7 @@ Flex布局的属性分成两类。一类定义在容器上面，称为容器属�
 * wrap：换行，第一行在上方，剩下的往下排；
 * wrap-reverse：换行，第一行在下方，剩下的往上排；
 
-3. justify-content: 主轴对齐方式
+###### 3. justify-content: 主轴对齐方式
 
 ```
   justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
@@ -108,7 +108,7 @@ Flex布局的属性分成两类。一类定义在容器上面，称为容器属�
 * space-around： 每个item左右侧的宽度都是相等的
 * space-evenly： ......
 
-4. align-items：次轴对齐
+###### 4. align-items：次轴对齐
 
 ```
   align-items: flex-start | flex-end | center |stretch | baseline;
@@ -120,7 +120,7 @@ Flex布局的属性分成两类。一类定义在容器上面，称为容器属�
 * baseline: 基线对齐
 * stretch: 将item拉到一般高对齐
 
-5. align-content: 多行内容分布
+###### 5. align-content: 多行内容分布
 
 ```
   align-content: flex-start | flex-end | center | stretch | space-between |space-around;
@@ -176,7 +176,7 @@ Grid 布局的属性分成两类。一类定义在容器上面，称为容器属
 容器属性包含：grid-template-columns | grid-template-rows / grid-row-gap | grid-column-gap / grid-template-areas / grid-auto-flow / 
 justify-items | align-items / justify-content | align-content / grid-auto-columns | grid-auto-rows。
 
-1. grid-template-columns和grid-template-rows 属性
+###### 1. grid-template-columns和grid-template-rows 属性
 
 grid-template-columns属性定义每一列的列宽，grid-template-rows定义每一行的行高，可以使用绝对单位，也可以使用百分比。
 
@@ -257,7 +257,7 @@ grid-template-columns属性和grid-template-rows属性里面，还可以使用�
 }
 ```
 
-2. grid-row-gap和gird-column-gap 属性 (简写属性：grid-gap)
+###### 2. grid-row-gap和gird-column-gap 属性 (简写属性：grid-gap)
 
 grid-row-gap属性设置行与行的间隔（行间距），grid-column-gap属性设置列与列的间隔（列间距）。
 
@@ -276,7 +276,7 @@ grid-gap属性是grid-column-gap和grid-row-gap的合并简写形式，如果gri
 
 （根据最新标准，上面三个属性名的grid-前缀已经删除，grid-column-gap和grid-row-gap写成column-gap和row-gap，grid-gap写成gap。）
 
-3. grid-template-areas 属性
+###### 3. grid-template-areas 属性
 
 网格布局允许指定"区域"（area），一个区域由单个或多个单元格组成。grid-template-areas属性用于定义区域。如果某些区域不需要利用，则使用"点"（.）表示。
 
@@ -308,7 +308,7 @@ grid-gap属性是grid-column-gap和grid-row-gap的合并简写形式，如果gri
 比如，区域名为header，则起始位置的水平网格线和垂直网格线叫做header-start，终止位置的水平网格线和垂直网格线叫做header-end。
 
 
-4. grid-auto-flow 属性
+###### 4. grid-auto-flow 属性
 
 划分网格以后，容器的子元素会按照顺序，自动放置在每一个网格。默认的放置顺序是"先行后列"，即先填满第一行，再开始放入第二行。
 
@@ -321,7 +321,7 @@ grid-gap属性是grid-column-gap和grid-row-gap的合并简写形式，如果gri
 grid-auto-flow属性除了设置成row和column，还可以设成row dense和column dense。这两个值主要用于，某些项目指定位置以后，剩下的项目怎么自动放置。
 属性值设为row dense，表示"先行后列"，并且尽可能紧密填满，尽量不出现空格。属性值设为column dense，表示"先列后行"，并且尽可能紧密填满，尽量不出现空格。
 
-5. justify-items和aligns-items 属性（简写属性：space-items）
+###### 5. justify-items和aligns-items 属性（简写属性：space-items）
 
 justify-items属性设置单元格内容的水平位置（左中右），align-items属性设置单元格内容的垂直位置（上中下）。
 
@@ -343,7 +343,7 @@ place-items属性是align-items属性和justify-items属性的合并简写形式
   place-items: <align-items> <justify-items>;
 ```
 
-6. justify-content和align-content（简写属性：place-content）
+###### 6. justify-content和align-content（简写属性：place-content）
 
 justify-content属性是整个内容区域在容器里面的水平位置（左中右），align-content属性是整个内容区域的垂直位置（上中下）。
 
@@ -368,7 +368,7 @@ place-content属性是align-content属性和justify-content属性的合并简写
   place-content: <align-content> <justify-content>
 ```
 
-7. grid-auto-columns和grid-auto-rows 属性
+###### 7. grid-auto-columns和grid-auto-rows 属性
 
 有时候，一些项目的指定位置，在现有网格的外部。比如网格只有3列，但是某一个项目指定在第5行。这时，浏览器会自动生成多余的网格，以便放置项目。
 
@@ -385,7 +385,7 @@ grid-template-rows完全相同。如果不指定这两个属性，浏览器完�
 ```
 上面代码指定新增的行高统一为50px（原始的行高为100px）。
 
-8. grid-template 属性，grid 属性
+###### 8. grid-template 属性，grid 属性
 
 grid-template属性是grid-template-columns、grid-template-rows和grid-template-areas这三个属性的合并简写形式。
 
@@ -397,7 +397,7 @@ grid属性是grid-template-rows、grid-template-columns、grid-template-areas、
 
 项目属性包含：grid-column-start | grid-row-start / grid-row-start | grid-row-start / grid-area / justify-self | align-self 。
 
-1. grid-column-start和grid-column-end 属性；grid-row-start和grid-row-end 属性
+###### 1. grid-column-start和grid-column-end 属性；grid-row-start和grid-row-end 属性
 
 项目的位置是可以指定的，具体方法就是指定项目的四个边框，分别定位在哪根网格线。
 
@@ -439,7 +439,7 @@ grid-column属性是grid-column-start和grid-column-end的合并简写形式，g
   }
 ```
 
-2. grid-area 属性
+###### 2. grid-area 属性
 
 ```
   .item-1 {
@@ -455,7 +455,7 @@ grid-area属性还可用作grid-row-start、grid-column-start、grid-row-end、g
   }
 ```
 
-3. justify-self和align-self 属性
+###### 3. justify-self和align-self 属性
 
 justify-self属性设置单元格内容的水平位置（左中右），跟justify-items属性的用法完全一致，但只作用于单个项目。
 align-self属性设置单元格内容的垂直位置（上中下），跟align-items属性的用法完全一致，也是只作用于单个项目。
