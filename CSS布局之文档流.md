@@ -29,18 +29,47 @@ p，h1-h6，div，ul，ol，table等。
 #### 浮动（float：left/right；）
 
 * 为元素设置float属性可以让元素产生浮动，从而脱离文档流，浮动可以解决图文并排的问题，浮动会造成元素脱离文档流，从而是外部盒子坍
-塌而使得浮动元素的内容溢出，解决这个问题的方法就是清除浮动，为浮动元素前/后元素设置clear属性即可，一般通过在父元素设置after伪类
-来处理。（clear：left/right/both；）
+塌而使得浮动元素的内容溢出，浮动还会导致内联元素与块级元素的排列对齐方式变得非常奇怪，解决这个问题的方法就是清除浮动。
 
-* left：清除左浮动
-* right：清除右浮动
-* both：清除左右浮动
+* clear：left； -- 清除左浮动
+* clear：right； -- 清除右浮动
+* clear：both； -- 清除左右浮动
+
+* 清除浮动的方式：
+
+##### 1. clear：left/right/both 
 
 ```
-  .fatherElement:after {
+  .float_brotherElement {
+     clear: left | right | both;
+  }
+
+```
+
+#### 2. 伪类（clearfix）
+```
+  .clearfix:after {
      content: '';
      display: block;
      clear: both;
   } 
 ```
+```
+  .clearfix::after {
+     content: '';
+     display: block;
+     clear: both;
+  }
+  
+
+```
+
+#### 定位（position 不为static（默认值））
+
+
+
+
+
+
+
 
