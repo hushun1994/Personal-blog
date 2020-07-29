@@ -69,7 +69,7 @@
 ```
   var obj = {name: 'hs', age: '25', sex: 'male'}
   
-  Object.assign(obj, {name: 'md', age: '18', sex: 'male', hobby: 'music'})
+  Object.assign(obj, {name: 'md', age: '18',hobby: 'music'})
   // obj被修改为obj = {name: 'md', age: '18', sex: 'male', hobby: 'music'}
 ```
 
