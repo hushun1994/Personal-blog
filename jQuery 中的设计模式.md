@@ -315,3 +315,5 @@ jQuery设计思想之五，就是提供两组方法，来操作元素在网页�
 
   $('ul').append('<li>list item</li>');
 ```
+
+## 参看链接：http://www.ruanyifeng.com/blog/2011/07/jquery_fundamentals.html
