@@ -8,6 +8,23 @@ MVC包括三类对象，将他们分离以提高灵活性和复用性。
 * 视图view是它在屏幕上的表示，描绘的是model的当前状态。当模型的数据发生变化，视图相应地得到刷新自己的机会。
 * 控制器controller定义用户界面对用户输入的响应方式，起到不同层面间的组织作用，用于控制应用程序的流程，它处理用户的行为和数据model上的改变。
 
+经典MVC模式
+
+![MVC Model](./src/images/MVC_model.png)
+
+其中涉及两种设计模式
+
+* view和model之间的观察者模式，view观察model，事先在此model上注册，以便view可以了解在数据model上发生的改变。
+
+* view和controller之间的策略模式
+
+一个策略是一个表述算法的对象，MVC允许在不改变视图外观的情况下改变视图对用户输入的响应方式。例如，你可能希望改变视图对键盘的响应方式，
+或希望使用弹出菜单而不是原来的命令键方式。MVC将响应机制封装在controller对象中。存在着一个controller的类层次结构，使得可以方便地
+对原有的controller做适当改变而创建新的controller。
+
+view使用controller子类的实例来实现一个特定的响应策略。要实现不同的响应的策略只要用不同种类的controller实例替换即可。甚至可以在运
+行时刻通过改变view的controller来改变用户输入的响应方式。例如，一个view可以被禁止接受任何输入，只需给他一个忽略输入事件的controller。
+
 ## EventBus 的API
 
 ### EventBus.on
