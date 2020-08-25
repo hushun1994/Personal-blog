@@ -12,6 +12,8 @@ MVC包括三类对象，将他们分离以提高灵活性和复用性。
 
 ![MVC Model](./src/images/MVC_model.png)
 
+实线：方法调用 虚线：事件通知
+
 其中涉及两种设计模式
 
 * view和model之间的观察者模式，view观察model，事先在此model上注册，以便view可以了解在数据model上发生的改变。
